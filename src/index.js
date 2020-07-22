@@ -1,4 +1,4 @@
-import "dotenv/config";
+// import "dotenv/config";
 import cors from "cors";
 import express from "express";
 
@@ -76,3 +76,4 @@ const createUsersWithMessages = async () => {
     });
   });
 };
+console.log("please see that i have fixed it");
