@@ -48,7 +48,11 @@ git clone https://github.com/colleenobrien3/expressPostgres.git
 
 2. Enter cloned repository.
 
-3. Run the command `npm install` to install the dependencies in the package.json.
+3. To install the dependencies in the package.json, run the command:
+
+```
+npm install
+```
 
 4. To quickly create a local Postgres database with that matches the app's configuration, you must first enter the psql shell with the command:
 
@@ -58,11 +62,11 @@ psql
 
 5. Run the following commands to actually create the database:
 
-   ```
-   CREATE DATABASE expresspostgres;
-   CREATE USER coll WITH PASSWORD 'coll';
-   GRANT ALL PRIVELEGES ON DATABASE expresspostgres TO coll;
-   ```
+```
+CREATE DATABASE expresspostgres;
+CREATE USER coll WITH PASSWORD 'coll';
+GRANT ALL PRIVELEGES ON DATABASE expresspostgres TO coll;
+```
 
 6. To start the server and seed the data into your local database, run:
 
