@@ -29,6 +29,7 @@
 
 // import "dotenv/config";
 import Sequelize from "sequelize";
+let sequelize;
 
 if (process.env.DATABASE_URL) {
   // the application is executed on Heroku ... use the postgres database
@@ -38,7 +39,7 @@ if (process.env.DATABASE_URL) {
     logging: true, //false
   });
 } else {
-  const sequelize = new Sequelize("expresspostgres", "coll", "coll", {
+  sequelize = new Sequelize("expresspostgres", "coll", "coll", {
     dialect: "postgres",
   });
 }
