@@ -27,7 +27,7 @@
 //   messages,
 // };
 
-import "dotenv/config";
+// import "dotenv/config";
 import Sequelize from "sequelize";
 
 const sequelize = new Sequelize("expresspostgres", "coll", "coll", {

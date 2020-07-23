@@ -1,7 +1,7 @@
-import session from "./session";
-import user from "./user";
-import message from "./message";
-import cfbrand from "./cfbrand";
+import session from "./session.js";
+import user from "./user.js";
+import message from "./message.js";
+import cfbrand from "./cfbrand.js";
 
 export default {
   session,
