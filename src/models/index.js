@@ -30,9 +30,18 @@
 // import "dotenv/config";
 import Sequelize from "sequelize";
 
-const sequelize = new Sequelize("expresspostgres", "coll", "coll", {
-  dialect: "postgres",
-});
+if (process.env.DATABASE_URL) {
+  // the application is executed on Heroku ... use the postgres database
+  sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: "postgres",
+    protocol: "postgres",
+    logging: true, //false
+  });
+} else {
+  const sequelize = new Sequelize("expresspostgres", "coll", "coll", {
+    dialect: "postgres",
+  });
+}
 
 // var models = [];
 
