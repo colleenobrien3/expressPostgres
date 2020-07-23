@@ -2,7 +2,7 @@
 
 ## Description
 
-Before this project, I had only used PostgreSQL with Python apps (P for Postgres, P for Python, right?) Once I heard that a JavaScript app can be configured to work with Postgres just as easily as a Python app, I was curious to see how that worked. So, I created this project in which I use Node.js and Express along with a PostgreSQL database to rebuild a cruelty-free cosmetics API I originally created with Python's Django framework. This project actually fetches it's data on cruelty-free cosmetics straight from my previous API.
+Before this project, I had only used PostgreSQL with Python apps (P for Postgres, P for Python, right?) Once I heard that a JavaScript app can be configured to work with Postgres just as easily as a Python app, I was curious to see how that worked. So, I created this project in which I use Node.js and Express.js along with a PostgreSQL database to rebuild a cruelty-free cosmetics API I originally created with Python's Django framework. This project actually fetches it's data on cruelty-free cosmetics straight from my previous API.
 
 I followed [this tutorial](https://www.robinwieruch.de/postgres-express-setup-tutorial) for much of the setup, although ended up having to make quite a few changes. That being said, please ignore the code that handles the 'message' and 'user' routes and models, etc., as these were just for practice through the tutorial! The only relevant and fully functioning route is for the /brands path of the API, which gives the list of cruelty-free cosmetics brands.
 
@@ -74,8 +74,6 @@ GRANT ALL PRIVELEGES ON DATABASE expresspostgres TO coll;
 npm start
 ```
 
-## Database Setup
-
 ## API Paths
 
 | Method |  Path   | Description         |
@@ -84,4 +82,4 @@ npm start
 
 ## Next Steps
 
-Please click [here](https://hilight.netlify.app/) to view the deployed frontend, and [here](https://github.com/colleenobrien3/react_cruelty_free) to view the frontend repo.
+As this is just a refactored version of another project, see that project (linked above) for my big plans for it's future!
