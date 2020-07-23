@@ -1,4 +1,4 @@
-# Refactored Cruelty-free Cosmetics API, NOW WITH NODE.JS AND EXPRESS
+# Refactored Cruelty-free Cosmetics API, NOW WITH NODE AND EXPRESS
 
 ## Description
 

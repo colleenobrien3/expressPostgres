@@ -1,6 +1,5 @@
 import { Router } from "express";
 import models from "../models/index.js";
-// const models = require("../models/index.js");
 const path = require("path");
 const cfbrand = require(path.join("../models", "/cfbrand.js"));
 
