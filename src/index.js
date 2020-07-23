@@ -2,7 +2,7 @@
 import cors from "cors";
 import express from "express";
 
-import models, { sequelize } from "./models/index";
+import models, { sequelize } from "./models/index.js";
 import routes from "./routes";
 import data from "../data.json";
 
