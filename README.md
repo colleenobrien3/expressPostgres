@@ -8,12 +8,12 @@ I followed [this tutorial](https://www.robinwieruch.de/postgres-express-setup-tu
 
 To see the repo and deployed app for my original API, please follow these links:
 
-[API Repo](https://github.com/colleenobrien3/makeupupi)
+[API Repo](https://github.com/colleenobrien3/makeupupi) <br>
 [Deployed API](https://arcane-brook-10088.herokuapp.com/companies)
 
 I also built a frontend with the JavaScript React framework that allows users to search the API to see whether a brand is cruelty-free before purchasing. Please see the following links:
 
-[Frontend Repo](https://github.com/colleenobrien3/react_cruelty_free)
+[Frontend Repo](https://github.com/colleenobrien3/react_cruelty_free) <br>
 [Deployed Frontend](https://hilight.netlify.app/)
 
 ## Languages and Technologies
@@ -32,9 +32,9 @@ Click [here](https://gentle-falls-38875.herokuapp.com/brands) to view the deploy
 
 In order to setup the API and database locally, you will need the following installed on your machine:
 
-- ['node'](https://nodejs.org/en/download/))
-- ['npm'](https://www.npmjs.com/get-npm)
-- ['postgresql'](https://www.postgresql.org/docs/9.3/tutorial-install.html)
+- [node](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm)
+- [postgresql](https://www.postgresql.org/docs/9.3/tutorial-install.html)
 
 ## Setup and Installation
 
@@ -52,10 +52,17 @@ git clone https://github.com/colleenobrien3/expressPostgres.git
 
 4. To quickly create a local Postgres database with that matches the app's configuration, you must first enter the psql shell with the command:
 
-`psql`
+```
+psql
+```
 
 5. Run the following commands to actually create the database:
-   `CREATE DATABASE expresspostgres; CREATE USER coll WITH PASSWORD 'coll'; GRANT ALL PRIVELEGES ON DATABASE expresspostgres TO coll;`
+
+   ```
+   CREATE DATABASE expresspostgres;
+   CREATE USER coll WITH PASSWORD 'coll';
+   GRANT ALL PRIVELEGES ON DATABASE expresspostgres TO coll;
+   ```
 
 6. To start the server and seed the data into your local database, run:
 
